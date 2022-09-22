@@ -1,5 +1,5 @@
 [package]
-name = "primitives"
+name = "laron-primitives"
 description = "Ethereum primitives for Rust"
 license = "GPL-3.0-or-later"
 readme = "README.md"

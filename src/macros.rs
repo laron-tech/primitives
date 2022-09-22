@@ -1,4 +1,4 @@
-// This file is part of the primitives.
+// This file is part of the laron-primitives.
 //
 // Copyright (C) 2022 Ade M Ramdani
 //
@@ -29,7 +29,7 @@ macro_rules! bit_size {
 macro_rules! doc {
     ($x:expr, $s:expr, $($t:tt)*) => {
         #[doc = $x]
-        #[doc = concat!("```", "\nuse primitives::*;\n\n", "let x: ", stringify!($s), " = 100u8.into();", "\n", "assert_eq!(100u8, x.into());\n\n", "```")]
+        #[doc = concat!("```", "\nuse laron_primitives::*;\n\n", "let x: ", stringify!($s), " = 100u8.into();", "\n", "assert_eq!(100u8, x.into());\n\n", "```")]
         #[derive(Clone, Copy)]
         $($t)*
     };

@@ -1,4 +1,4 @@
-// This file is part of the primitives.
+// This file is part of the laron-primitives.
 //
 // Copyright (C) 2022 Ade M Ramdani
 //
@@ -21,7 +21,7 @@
 //! it is unstable and not intended for production use.
 //!
 //! ```rust
-//! use primitives::*;
+//! use laron_primitives::*;
 //!
 //! let a = U256::from(100);
 //! let b = U256::from(2);
@@ -31,7 +31,7 @@
 //! Or you can use `.into()` method to init the types.
 //!
 //! ```rust
-//! use primitives::*;
+//! use laron_primitives::*;
 //!
 //! let a: U24 = 100u64.into();
 //! let b: U24 = 2u64.into();
@@ -44,7 +44,7 @@
 //! define a type with 512 bit, you can use the macro.
 //! ```rust
 //!
-//! use primitives::*;
+//! use laron_primitives::*;
 //!
 //! define!(U512, 64, "512 bit");
 //!

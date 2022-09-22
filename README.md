@@ -1,20 +1,20 @@
-# UN-PRIM
-![build](https://github.com/rebrave04/un-prim/actions/workflows/rust.yml/badge.svg)
+# PRIMITIVES
+![build](https://github.com/laron-tech/primitives/actions/workflows/rust.yml/badge.svg)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![crates.io](https://img.shields.io/crates/v/un-prim.svg)
+![crates.io](https://img.shields.io/crates/v/laron-primitives.svg)
 
-Unusual primitive types for any rust project.
+Ethereum primitives type for rust.
 
 This crate was **unstable** and maybe lot's of bugs and I suggest not to use this.
 
 ## Usage
 ```toml
 [dependencies]
-un-prim = "0.1"
+laron_primitives = "0.1"
 ```
 
 ```rust
-use un_prim::*;
+use laron_primitives::*;
 
 let x: U256 = 100u128.into();
 let y: U256 = 2u128.into();
@@ -26,7 +26,7 @@ assert_eq!(200u64, z.into());
 ## Macro
 To create new type, you can use macro `define!`.
 ```rust
-use un_prim::*;
+use laron_primitives::*;
 
 define!(U512, 64, "512-bits custom type.");
 
